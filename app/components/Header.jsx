@@ -44,7 +44,7 @@ export default function Header() {
       }`}
     >
       <div className="container mx-auto py-6 px-4 flex justify-between items-center">
-        <div className={`text-4xl md:text-xl font-bold neon-text ${pressStart2P.className}`}>
+        <div className={`text-4xl sm:text-xl font-bold neon-text ${pressStart2P.className}`}>
           <Link href="/">GameZone</Link>
         </div>
         <MenuButton toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />

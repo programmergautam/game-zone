@@ -18,7 +18,6 @@ export default function Header() {
       setIsMenuVisible(false);
     } else {
       setIsMenuVisible(true);
-      setTimeout(() => setIsVisible(true), 3000);
     }
     setLastScrollY(window.scrollY);
   };

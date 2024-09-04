@@ -3,6 +3,14 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import MenuButton from "./MenuButton";
+import { Press_Start_2P } from "next/font/google";
+import "./styles.css";
+
+const pressStart2P = Press_Start_2P({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,7 +44,7 @@ export default function Header() {
       }`}
     >
       <div className="container mx-auto py-6 px-4 flex justify-between items-center">
-        <div className="text-3xl font-bold text-green-400">
+        <div className={`text-4xl font-bold neon-text ${pressStart2P.className}`}>
           <Link href="/">GameZone</Link>
         </div>
         <MenuButton toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />

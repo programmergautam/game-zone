@@ -22,8 +22,7 @@ export default function Home() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        className="fixed top-0 left-0 right-0 z-50"
-        style={{ top: 0 }}
+        className="fixed top-0 right-0 z-50"
       />
       <ContactSection />
       <Footer />

@@ -1,24 +1,21 @@
 import "./globals.css";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+});
 
 export const metadata = {
-  charset: "UTF-8",
-  description: "GameZone - Your Ultimate Gaming Experience",
-  keywords: "gaming, GameZone, immersive gameplay, cross-platform play",
-  author: "GameZone Team",
-  title: "GameZone - Your Ultimate Gaming Experience",
-};
-
-export const viewport = {
-  width: "device-width",
-  initialScale: 1.0,
+  title: "GameZone",
+  description: "Your Ultimate Gaming Experience Awaits!",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-gray-100 min-h-screen">
-        <main>{children}</main>
-      </body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }

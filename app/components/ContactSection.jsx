@@ -11,7 +11,6 @@ export default function ContactSection() {
     const formData = new FormData(event.target);
 
     if (!formData.has("user_name") || !formData.has("user_email") || !formData.has("message")) {
-      console.error("Missing form fields.");
       toast.error("Please fill out all fields.");
       return;
     }
@@ -90,7 +89,17 @@ export default function ContactSection() {
           </div>
         </div>
       </div>
-      <ToastContainer />
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        className="fixed z-50 top-0"
+      />
     </section>
   );
 }

@@ -62,23 +62,27 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            <a
+            <Link
               href="#features"
               className="block md:inline-block p-4 hover:text-green-300 transition"
               onClick={closeMenu}
             >
               Features
-            </a>
-            <a href="#about" className="block md:inline-block p-4 hover:text-green-300 transition" onClick={closeMenu}>
+            </Link>
+            <Link
+              href="#about"
+              className="block md:inline-block p-4 hover:text-green-300 transition"
+              onClick={closeMenu}
+            >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               href="#contact"
               className="block md:inline-block p-4 hover:text-green-300 transition"
               onClick={closeMenu}
             >
               Contact
-            </a>
+            </Link>
           </div>
         </nav>
       </div>

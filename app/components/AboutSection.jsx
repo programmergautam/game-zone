@@ -13,6 +13,7 @@ export default function AboutSection() {
               width={600}
               height={400}
               className="rounded-lg shadow-lg"
+              priority
             />
           </div>
           <div className="md:w-1/2 md:pl-12">

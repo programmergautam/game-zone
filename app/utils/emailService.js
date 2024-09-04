@@ -12,4 +12,6 @@ const sendEmail = (data) => {
   return emailjs.send(serviceId, templateId, data, userId);
 };
 
-export default { sendEmail };
+const emailService = { sendEmail };
+
+export default emailService;

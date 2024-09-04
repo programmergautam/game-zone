@@ -21,8 +21,8 @@ export default function AboutSection() {
               team of experts works tirelessly to innovate and deliver the best content and technology.
             </p>
             <p className="text-lg">
-              Join us and be a part of a community that shares your passion for gaming. Whether you're a casual player
-              or a hardcore enthusiast, GameZone has something for everyone.
+              Join us and be a part of a community that shares your passion for gaming. Whether you&apos;re a casual
+              player or a hardcore enthusiast, GameZone has something for everyone.
             </p>
           </div>
         </div>

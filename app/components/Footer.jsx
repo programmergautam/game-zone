@@ -16,7 +16,7 @@ export default function Footer() {
             <FaInstagram className="text-gray-400 hover:text-pink-500 transition transform hover:scale-110" size={24} />
           </Link>
         </div>
-        <div>&copy; {new Date().getFullYear()} GameZone. Design & Developed with ❤️ by Gautam</div>
+        <div>&copy; {new Date().getFullYear()} GameZone ❤️ Gautam</div>
       </div>
     </footer>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailService from "../utils/emailService";
 

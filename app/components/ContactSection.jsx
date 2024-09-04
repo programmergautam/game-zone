@@ -89,17 +89,6 @@ export default function ContactSection() {
           </div>
         </div>
       </div>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop
-        closeOnClick
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        className="fixed z-50 top-0"
-      />
     </section>
   );
 }

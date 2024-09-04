@@ -8,8 +8,16 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "GameZone",
-  description: "Your Ultimate Gaming Experience Awaits!",
+  charset: "UTF-8",
+  description: "GameZone - Your Ultimate Gaming Experience",
+  keywords: "gaming, GameZone, immersive gameplay, cross-platform play, programmergautam, rgd",
+  author: "GameZone Team",
+  title: "GameZone - Your Ultimate Gaming Experience",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1.0,
 };
 
 export default function RootLayout({ children }) {

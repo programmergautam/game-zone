@@ -16,7 +16,7 @@ export default function HeroSection() {
       style={{ backgroundImage: "url(/gaming-bg.jpg)" }}
     >
       <div className="min-h-screen flex flex-col items-center justify-center container mx-auto p-10 pt-32 text-center rounded-lg shadow-lg bg-black bg-opacity-70">
-        <h1 className="md:text-4xl text-md font-extrabold mb-4 neon-text text-white">Welcome to GameZone</h1>
+        <h1 className="md:text-5xl text-md font-extrabold mb-4 neon-text text-white">Welcome to GameZone</h1>
         <p className="md:text-lg text-xs font-bold mb-8 neon-text text-white">
           Your Ultimate Gaming Experience Awaits!
         </p>

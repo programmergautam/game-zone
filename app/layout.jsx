@@ -13,10 +13,6 @@ export const metadata = {
   charset: "UTF-8",
   keywords: "gaming, GameZone, immersive gameplay, cross-platform play, programmergautam, rgd",
   author: "GameZone Team",
-  viewport: {
-    width: "device-width",
-    initialScale: 1.0,
-  },
   openGraph: {
     type: "website",
     url: "https://game-zone-by-programmergautam.vercel.app/",

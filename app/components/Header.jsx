@@ -44,12 +44,12 @@ export default function Header() {
       }`}
     >
       <div className="container mx-auto py-6 px-4 flex justify-between items-center">
-        <div className={`text-2xl font-bold neon-text ${pressStart2P.className}`}>
+        <div className={`md:text-2xl text-xl font-bold neon-text-purple ${pressStart2P.className}`}>
           <Link href="/">GameZone</Link>
         </div>
         <MenuButton toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
         <nav
-          className={`fixed top-0 right-0 md:relative md:flex md:space-x-4 text-lg bg-black md:bg-transparent w-64 md:w-auto h-full md:h-auto transition-transform duration-300 ease-in-out ${
+          className={`fixed neon-text top-0 right-0 md:relative md:flex md:space-x-4 text-lg bg-black md:bg-transparent w-64 md:w-auto h-full md:h-auto transition-transform duration-300 ease-in-out ${
             isMenuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
           } md:translate-x-0 md:opacity-100`}
           aria-label="Main navigation"
@@ -72,21 +72,21 @@ export default function Header() {
             </button>
             <Link
               href="#features"
-              className="block md:inline-block p-4 hover:text-green-300 transition"
+              className="block md:inline-block p-4 hover:text-cyan-400 transition"
               onClick={closeMenu}
             >
               Features
             </Link>
             <Link
               href="#about"
-              className="block md:inline-block p-4 hover:text-green-300 transition"
+              className="block md:inline-block p-4 hover:text-cyan-400 transition"
               onClick={closeMenu}
             >
               About
             </Link>
             <Link
               href="#contact"
-              className="block md:inline-block p-4 hover:text-green-300 transition"
+              className="block md:inline-block p-4 hover:text-cyan-400 transition"
               onClick={closeMenu}
             >
               Contact

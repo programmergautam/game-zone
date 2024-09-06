@@ -20,29 +20,3 @@
         0 0 20px #8544ff,
         0 0 35px #eebcff
 }
-
-
-.neon-border {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 9999px;
-    background: linear-gradient(90deg, blue, purple);
-    background-size: 200% 200%;
-    animation: rotate-border 4s linear infinite;
-    transition: box-shadow 0.5s ease-in-out;
-}
-
-.neon-border:hover {
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 0, 255, 0.8);
-}
-
-@keyframes rotate-border {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    100% {
-        background-position: 100% 50%;
-    }
-}

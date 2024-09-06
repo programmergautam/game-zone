@@ -1,10 +1,10 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import MenuButton from "./MenuButton";
 import { Press_Start_2P } from "next/font/google";
 import "./styles.css";
+import { gsap } from "gsap";
 
 const pressStart2P = Press_Start_2P({
   subsets: ["latin"],
@@ -37,6 +37,11 @@ export default function Header() {
     };
   }, [handleScroll]);
 
+  useEffect(() => {
+    gsap.fromTo(".logo", { opacity: 0, x: -250 }, { opacity: 1, x: 0, duration: 1, ease: "power2.out" });
+    gsap.fromTo(".menu", { opacity: 0, x: 250 }, { opacity: 1, x: 0, duration: 1, ease: "power2.out" });
+  }, []);
+
   return (
     <header
       className={`bg-black bg-opacity-50 backdrop-blur-md shadow-md fixed w-full z-10 transition-transform duration-300 ${
@@ -44,7 +49,7 @@ export default function Header() {
       }`}
     >
       <div className="container mx-auto py-6 px-4 flex justify-between items-center">
-        <div className={`md:text-2xl text-xl font-bold neon-text-purple ${pressStart2P.className}`}>
+        <div className={`md:text-2xl text-xl font-bold neon-text-purple ${pressStart2P.className} logo`}>
           <Link href="/">GameZone</Link>
         </div>
         <MenuButton toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
@@ -54,10 +59,10 @@ export default function Header() {
           } md:translate-x-0 md:opacity-100`}
           aria-label="Main navigation"
         >
-          <div className="flex flex-col md:flex-row h-full md:h-auto p-4 md:p-0">
+          <div className="flex flex-col md:flex-row h-full md:h-auto p-4 md:p-0 menu">
             <button
               onClick={closeMenu}
-              className="self-end mb-4 md:hidden p-2 text-green-400 hover:text-green-300 transition"
+              className="self-end mb-4 md:hidden p-2 text-purple-500 hover:text-purple-600 transition"
               aria-label="Close menu"
             >
               <svg

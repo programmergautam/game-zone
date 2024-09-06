@@ -14,6 +14,7 @@ Welcome to GameZone, your ultimate destination for immersive gaming experiences!
 - **Next.js**: A React framework for server-side rendering and static site generation.
 - **Tailwind CSS**: A utility-first CSS framework for creating custom designs quickly.
 - **EmailJS**: A service for sending emails directly from the client-side without needing a backend.
+- **GSAP**: A powerful animation library for creating smooth, high-performance animations that enhance the visual appeal and interactivity of your site.
 
 ## Installation
 

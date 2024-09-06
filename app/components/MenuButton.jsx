@@ -1,4 +1,4 @@
-export default function MenuButton({ toggleMenu, isMenuOpen }) {
+export default function MenuButton({ toggleMenu }) {
   return (
     <button
       onClick={toggleMenu}

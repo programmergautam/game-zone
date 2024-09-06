@@ -8,7 +8,7 @@ import { ToastContainer } from "react-toastify";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-br from-purple-900 to-blue-900 min-h-screen flex flex-col text-white">
+    <div className="bg-gradient-to-br from-purple-900 to-blue-900 min-h-screen flex flex-col text-slate-100">
       <Header />
       <HeroSection />
       <FeaturesSection />

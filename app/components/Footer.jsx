@@ -1,4 +1,5 @@
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Footer() {
@@ -10,7 +11,7 @@ export default function Footer() {
             <FaFacebookF className="text-gray-400 hover:text-blue-500 transition transform hover:scale-110" size={24} />
           </Link>
           <Link href="https://www.twitter.com">
-            <FaTwitter className="text-gray-400 hover:text-blue-400 transition transform hover:scale-110" size={24} />
+            <FaXTwitter className="text-gray-400 hover:text-blue-400 transition transform hover:scale-110" size={24} />
           </Link>
           <Link href="https://www.instagram.com">
             <FaInstagram className="text-gray-400 hover:text-pink-500 transition transform hover:scale-110" size={24} />

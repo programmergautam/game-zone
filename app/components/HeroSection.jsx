@@ -20,7 +20,7 @@ export default function HeroSection() {
 
     gsap.fromTo(
       ".hero-text",
-      { opacity: 0, scale: 0.8 },
+      { opacity: 0, scale: 0.9 },
       {
         opacity: 1,
         scale: 1,
@@ -36,11 +36,10 @@ export default function HeroSection() {
     );
     gsap.fromTo(
       ".hero-button-l",
-      { opacity: 0, x: 150 },
+      { opacity: 0, x: 50 },
       {
         opacity: 1,
         x: 0,
-        delay: 0.5,
         duration: 1,
         ease: "back.out",
         scrollTrigger: {
@@ -53,11 +52,10 @@ export default function HeroSection() {
     );
     gsap.fromTo(
       ".hero-button-r",
-      { opacity: 0, x: -150 },
+      { opacity: 0, x: -50 },
       {
         opacity: 1,
         x: 0,
-        delay: 0.5,
         duration: 1,
         ease: "back.out",
         scrollTrigger: {
@@ -76,10 +74,10 @@ export default function HeroSection() {
       className={`min-h-screen bg-[url('/gaming-bg.jpg')] bg-cover bg-center bg-no-repeat flex items-center justify-center bg-opacity-50 ${pressStart2P.className}`}
     >
       <div className="min-h-screen flex flex-col items-center justify-center container mx-auto pt-32 p-4 text-center rounded-lg shadow-lg bg-black bg-opacity-70">
-        <h1 className="md:text-5xl text-md font-extrabold mb-4 neon-text text-slate-100 hero-text">
+        <h1 className="md:text-5xl text-sm font-extrabold mb-4 neon-text text-slate-100 hero-text">
           Welcome to GameZone
         </h1>
-        <p className="md:text-lg text-xs font-bold mb-8 neon-text text-slate-100 hero-text">
+        <p className="md:text-lg text-[0.4rem] font-bold my-8 neon-text text-slate-100 hero-text">
           Your Ultimate Gaming Experience Awaits!
         </p>
         <div className="flex justify-center gap-2 mt-10">

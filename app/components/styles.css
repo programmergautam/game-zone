@@ -20,3 +20,32 @@
         0 0 20px #8544ff,
         0 0 35px #eebcff
 }
+
+.relative {
+    position: relative;
+}
+
+.top-line {
+    position: absolute;
+    top: 0;
+    transform-origin: left;
+}
+
+
+.bottom-line {
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+    transform-origin: left;
+}
+
+.open .top-line {
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.open .bottom-line {
+    transform: rotate(-45deg);
+    bottom: 50%;
+    left: 0;
+}

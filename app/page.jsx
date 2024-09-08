@@ -5,6 +5,7 @@ import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import { ToastContainer } from "react-toastify";
+import TestimonialSection from "./components/TestimonialSection";
 
 export default function Home() {
   return (
@@ -13,17 +14,8 @@ export default function Home() {
       <HeroSection />
       <FeaturesSection />
       <AboutSection />
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop
-        closeOnClick
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        className="fixed top-0 right-0 z-50"
-      />
+      <ToastContainer className="fixed top-0 right-0 z-50" />
+      <TestimonialSection />
       <ContactSection />
       <Footer />
     </div>

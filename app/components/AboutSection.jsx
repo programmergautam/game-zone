@@ -14,7 +14,7 @@ export default function AboutSection() {
 
     gsap.fromTo(
       ".about-img",
-      { opacity: 0, scale: 0.8, x: 250 },
+      { opacity: 0, scale: 0.8, x: 5 },
       {
         opacity: 1,
         scale: 1,
@@ -32,7 +32,7 @@ export default function AboutSection() {
 
     gsap.fromTo(
       ".about-text",
-      { opacity: 0, scale: 0.8, x: -250 },
+      { opacity: 0, scale: 0.8, x: -5 },
       {
         opacity: 1,
         scale: 1,

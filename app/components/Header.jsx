@@ -38,8 +38,8 @@ export default function Header() {
   }, [handleScroll]);
 
   useEffect(() => {
-    gsap.fromTo(".logo", { opacity: 0, x: -250 }, { opacity: 1, x: 0, duration: 1, ease: "power2.out" });
-    gsap.fromTo(".menu", { opacity: 0, x: 250 }, { opacity: 1, x: 0, duration: 1, ease: "power2.out" });
+    gsap.fromTo(".logo", { opacity: 0, x: -25 }, { opacity: 1, x: 0, duration: 1, ease: "power2.out" });
+    gsap.fromTo(".menu", { opacity: 0, x: 25 }, { opacity: 1, x: 0, duration: 1, ease: "power2.out" });
   }, []);
 
   return (
@@ -52,7 +52,9 @@ export default function Header() {
         <div className={`md:text-2xl text-xl font-bold neon-text-purple ${pressStart2P.className} logo`}>
           <Link href="/">GameZone</Link>
         </div>
-        <MenuButton toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+        <div className="menu z-50">
+          <MenuButton toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+        </div>
         <nav
           className={`fixed neon-text top-0 right-0 md:relative md:flex md:space-x-4 text-lg bg-black md:bg-transparent w-64 md:w-auto h-full md:h-auto transition-transform duration-300 ease-in-out ${
             isMenuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
@@ -60,21 +62,6 @@ export default function Header() {
           aria-label="Main navigation"
         >
           <div className="flex flex-col md:flex-row h-full md:h-auto p-4 md:p-0 menu">
-            <button
-              onClick={closeMenu}
-              className="self-end mb-4 md:hidden p-2 text-purple-500 hover:text-purple-600 transition"
-              aria-label="Close menu"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
             <Link
               href="#features"
               className="block md:inline-block p-4 hover:text-cyan-400 transition"
@@ -88,6 +75,13 @@ export default function Header() {
               onClick={closeMenu}
             >
               About
+            </Link>
+            <Link
+              href="#testimonials"
+              className="block md:inline-block p-4 hover:text-cyan-400 transition"
+              onClick={closeMenu}
+            >
+              Testimonial
             </Link>
             <Link
               href="#contact"

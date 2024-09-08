@@ -16,12 +16,11 @@ export default function ContactSection() {
     const section = sectionRef.current;
 
     gsap.fromTo(
-      ".contect-form",
-      { opacity: 0, scale: 0.8, x: 250 },
+      ".contact-form",
+      { opacity: 0, y: -50 },
       {
         opacity: 1,
-        scale: 1,
-        x: 0,
+        y: 0,
         duration: 1,
         ease: "power2.out",
         scrollTrigger: {
@@ -33,11 +32,11 @@ export default function ContactSection() {
       }
     );
     gsap.fromTo(
-      ".contect-text",
-      { opacity: 0, scale: 0.5 },
+      ".contact-text",
+      { opacity: 0, y: -50 },
       {
         opacity: 1,
-        scale: 1,
+        y: 0,
         duration: 1,
         ease: "power2.out",
         scrollTrigger: {
@@ -81,21 +80,23 @@ export default function ContactSection() {
     <section
       id="contact"
       ref={sectionRef}
-      className="min-h-screen py-20 bg-black bg-opacity-70 backdrop-blur-md flex items-center"
+      className="py-12 bg-gradient-to-b bg-opacity-70 backdrop-blur-md flex items-center"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">Get in Touch</h2>
-        <div className="flex flex-col md:flex-row items-center contect-text">
+        <h2 className="text-3xl font-bold text-center mb-8">Get in Touch</h2>
+        <div className="flex flex-col md:flex-row items-center contact-text">
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <h3 className="text-2xl font-bold mb-4">Contact Us</h3>
-            <p className="text-lg mb-4">Have questions or need support? We’re here to help. Reach out to us anytime.</p>
-            <p className="text-lg">Email: support@gamezone.com</p>
-            <p className="text-lg">Phone: +123 456 7890</p>
+            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+            <p className="text-base mb-4">
+              Have questions or need support? We’re here to help. Reach out to us anytime.
+            </p>
+            <p className="text-base">Email: support@gamezone.com</p>
+            <p className="text-base">Phone: +123 456 7890</p>
           </div>
-          <div className="md:w-1/2 md:pl-12 contect-form">
-            <form onSubmit={handleFormSubmit} className="max-w-lg mx-auto p-8 bg-purple-800 rounded-lg shadow-lg">
-              <div className="mb-6">
-                <label htmlFor="name" className="block text-lg font-medium mb-2">
+          <div className="md:w-1/2 md:pl-12 contact-form">
+            <form onSubmit={handleFormSubmit} className="max-w-lg mx-auto p-6 bg-purple-800 rounded-lg shadow-lg">
+              <div className="mb-4">
+                <label htmlFor="name" className="block text-base font-medium mb-2">
                   Name
                 </label>
                 <input
@@ -106,8 +107,8 @@ export default function ContactSection() {
                   required
                 />
               </div>
-              <div className="mb-6">
-                <label htmlFor="email" className="block text-lg font-medium mb-2">
+              <div className="mb-4">
+                <label htmlFor="email" className="block text-base font-medium mb-2">
                   Email
                 </label>
                 <input
@@ -118,8 +119,8 @@ export default function ContactSection() {
                   required
                 />
               </div>
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-lg font-medium mb-2">
+              <div className="mb-4">
+                <label htmlFor="message" className="block text-base font-medium mb-2">
                   Message
                 </label>
                 <textarea
@@ -139,7 +140,7 @@ export default function ContactSection() {
               >
                 <span>Send Message</span>
                 {isLoading && (
-                  <div className="ml-2 w-4 h-4 animate-spin  border-2 border-t-transparent border-white rounded-full"></div>
+                  <div className="ml-2 w-4 h-4 animate-spin border-2 border-t-transparent border-white rounded-full"></div>
                 )}
               </button>
             </form>

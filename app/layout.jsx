@@ -8,17 +8,25 @@ const poppins = Poppins({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://game-zone-by-programmergautam.vercel.app/"),
   title: "GameZone - Your Ultimate Gaming Experience",
   description: "GameZone - Your Ultimate Gaming Experience Awaits!",
   charset: "UTF-8",
   keywords: "gaming, GameZone, immersive gameplay, cross-platform play, programmergautam, rgd",
-  author: "GameZone Team",
+  authors: [{ name: "RGD" }],
   openGraph: {
     type: "website",
     url: "https://game-zone-by-programmergautam.vercel.app/",
     title: "GameZone - Your Ultimate Gaming Experience",
     description: "Join GameZone for immersive gameplay and cross-platform play!",
-    image: "https://game-zone-by-programmergautam.vercel.app/gaming-bg.jpg",
+    images: [
+      {
+        url: "/gaming-bg.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Gaming background",
+      },
+    ],
     siteName: "GameZone",
     locale: "en_US",
   },
@@ -27,25 +35,20 @@ export const metadata = {
     site: "@gamezone",
     title: "GameZone - Your Ultimate Gaming Experience",
     description: "Join GameZone for immersive gameplay and cross-platform play!",
-    image: "https://game-zone-by-programmergautam.vercel.app/gaming-bg.jpg",
+    images: ["/gaming-bg.jpg"],
   },
   facebook: {
     app_id: "1234567890",
-    title: "GameZone - Your Ultimate Gaming Experience",
-    description: "Join GameZone for immersive gameplay and cross-platform play!",
-    image: "https://game-zone-by-programmergautam.vercel.app/gaming-bg.jpg",
-    url: "https://game-zone-by-programmergautam.vercel.app/",
   },
-  linkedin: {
-    title: "GameZone - Your Ultimate Gaming Experience",
-    description: "Join GameZone for immersive gameplay and cross-platform play!",
-    image: "https://game-zone-by-programmergautam.vercel.app/gaming-bg.jpg",
-    url: "https://game-zone-by-programmergautam.vercel.app/",
+  robots: {
+    index: true,
+    follow: true,
   },
-  general: {
-    title: "GameZone - Your Ultimate Gaming Experience",
-    description: "Join GameZone for immersive gameplay and cross-platform play!",
-    image: "https://game-zone-by-programmergautam.vercel.app/gaming-bg.jpg",
+  alternates: {
+    canonical: "https://game-zone-by-programmergautam.vercel.app/",
+  },
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
